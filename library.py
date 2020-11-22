@@ -10,7 +10,7 @@
 # To get the Fibunatcci of (4) we should knows the Fibunatcci of
 #  (3)and (2) and so on..
 
-def Fibunatcci(number):
+def fibunatcci(number):
     if number == 0:
         return 0
     elif number == 1:
@@ -18,7 +18,7 @@ def Fibunatcci(number):
     else:
 # here I'm using a method call a (recursion) 
 # where the solution depends on solutions to smaller instances of the same problem
-        return Fibunatcci(number-1)+Fibunatcci(number-2)
+        return fibunatcci(number-1)+fibunatcci(number-2)
 # Fibunatcci of 0 is 0
 # Fibunatcci of 1 is 1
 # based on Fibunatcci of 2 and 1 we can get the Fibunatcci of 2 ,3 ,4 etc..
